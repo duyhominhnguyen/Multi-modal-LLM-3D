@@ -1,0 +1,17 @@
+torchrun --nnodes=1 --nproc_per_node=8 open_flamingo/eval/evaluate.py \
+    --vision_encoder_path ViT-L-14 \
+    --vision_encoder_pretrained openai \
+    --lm_path anas-awadalla/mpt-1b-redpajama-200b \
+    --lm_tokenizer_path anas-awadalla/mpt-1b-redpajama-200b \
+    --cross_attn_every_n_layers 1 \
+    --checkpoint_path "OpenFlamingo-3B-vitl-mpt1b/checkpoint_19.pt" \
+    --results_file "results.json" \
+    --precision amp_bf16 \
+    --batch_size 128 \
+    --query_set_size 32 \
+    --eval_textvqa \
+    --textvqa_image_dir_path "/maund/dataset/textvqa/train_images" \
+    --textvqa_train_questions_json_path "open_flamingo/eval/data/textvqa/train_questions_vqa_format_3_extended.json" \
+    --textvqa_train_annotations_json_path "open_flamingo/eval/data/textvqa/train_annotations_vqa_format_3_extended.json" \
+    --textvqa_test_questions_json_path "open_flamingo/eval/data/textvqa/val_questions_vqa_format_3_extended.json" \
+    --textvqa_test_annotations_json_path "open_flamingo/eval/data/textvqa/val_annotations_vqa_format_3_extended.json" 

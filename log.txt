@@ -1,0 +1,250 @@
+You are using config.init_device='cpu', but you can also use config.init_device="meta" with Composer + FSDP for fast initialization.
+Flamingo model initialized with 1046992944 trainable parameters
+Start running training on rank 0.
+Initializing distributed training with 1 GPUs.
+Total training steps: 30
+====> 
+
+
+ Files:  <generator object tar_file_expander at 0x791b6a00d4a0>
+DATA:  <generator object tar_file_expander at 0x791b6a00d4a0>
+====> 
+
+
+ Files:  <generator object tar_file_expander at 0x791b6a00d4a0>
+DATA:  <generator object tar_file_expander at 0x791b6a00d4a0>
+====> 
+
+
+ Files:  <generator object tar_file_expander at 0x791b6a00d4a0>
+DATA:  <generator object tar_file_expander at 0x791b6a00d4a0>
+====> 
+
+
+ Files:  <generator object tar_file_expander at 0x791b6a00d4a0>
+DATA:  <generator object tar_file_expander at 0x791b6a00d4a0>
+====> 
+
+
+ Files:  <generator object tar_file_expander at 0x791b6a00d660>
+DATA:  <generator object tar_file_expander at 0x791b6a00d660>
+====> 
+
+
+ Files:  <generator object tar_file_expander at 0x791b6a00d660>
+DATA:  <generator object tar_file_expander at 0x791b6a00d660>
+====> 
+
+
+ Files:  <generator object tar_file_expander at 0x791b6a00d660>
+DATA:  <generator object tar_file_expander at 0x791b6a00d660>
+====> 
+
+
+ Files:  <generator object tar_file_expander at 0x791b6a00d660>
+DATA:  <generator object tar_file_expander at 0x791b6a00d660>
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
+Filesample:  {}
