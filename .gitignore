@@ -1,0 +1,89 @@
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Ignore dependency files
+Pipfile
+Pipfile.lock
+poetry.lock
+conda-lock.yml
+
+# Ignore logs and debug files
+*.log
+*.out
+*.err
+logs/
+wandb/
+tensorboard/
+mlruns/  # MLflow logs
+
+# Ignore datasets and large files
+datasets/
+data/
+*.csv
+*.json
+*.h5
+*.hdf5
+*.tar
+*.zip
+
+# Ignore model checkpoints
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.tflite
+*.onnx
+*.hdf5
+*.pb
+*.weights
+
+# Ignore experiment outputs
+runs/
+results/
+output/
+predictions/
+submission.csv
+
+# Ignore cache and temporary files
+.cache/
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Ignore Hugging Face and other model-related files
+hf_cache/
+transformers_cache/
+torch_cache/
+torch_extensions/
+
+# Ignore VS Code and PyCharm settings
+.vscode/
+.idea/
+
+# Ignore Colab-specific files
+.colab/
+
+# Ignore Docker build files
+*.dockerfile
+__pycache__/
+build/
+dist/
+
+# Ignore Kubernetes and cloud deployment files
+.kube/
+terraform.tfstate
+.env
