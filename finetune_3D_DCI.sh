@@ -4,7 +4,7 @@ NOTE=original_LLaVA-Med_new
 NOTE_OUTPUT="_pre-train_stage_1_3D_mlp" # lora: with adapter again, non: no adapter.
 DATASET_LINK="./dataset_3D/$DATASET"
 
-MODEL_NAME="./weight_llava_med/checkpoint_llava_med_instruct_60k_inline_mention_version_1-5"
+MODEL_NAME="./models/checkpoint_llava_med_instruct_60k_inline_mention_version_1-5_1e0_multi_graph_100_scale_dci_test_bugfix"
 #VISION_TOWER=goog§le/siglip-so400m-patch14-384
 VISION_TOWER=openai/clip-vit-large-patch14
 
@@ -21,7 +21,7 @@ torchrun --nnodes=1 --nproc_per_node=4 --master_port=25100 llava/train/train_mem
 	--image_folder $DATASET_LINK/vbm_images \
    	--vision_tower $VISION_TOWER \
 	--tune_mm_mlp_adapter True \
-	--mm_dense_connector_type None \
+	--mm_dense_connector_type dci \
 	--mm_projector_type mlp2x_gelu \
 	--mm_vision_select_layer -2 \
 	--mm_use_im_start_end False \
@@ -65,7 +65,7 @@ torchrun --nnodes=1 --nproc_per_node=4 --master_port=25100 llava/train/train_mem
 	--data_path $DATASET_LINK/AD_instruct_post_3D_version.json \
 	--image_folder $DATASET_LINK/vbm_images \
    	--vision_tower $VISION_TOWER \
-	--mm_dense_connector_type None \
+	--mm_dense_connector_type dci \
 	--mm_projector_type mlp2x_gelu \
 	--tune_mm_mlp_adapter False \
 	--group_by_modality_length True \

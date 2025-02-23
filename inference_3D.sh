@@ -4,7 +4,6 @@ NOTE=original_LLaVA-Med_new
 NOTE_OUTPUT="_pre-train_stage_2_3D_mlp" # lora: with adapter again, non: no adapter.
 DATASET_LINK="/netscratch/duynguyen/Research/bao_llava_med/Dense/dataset_3D/$DATASET"
 
-MODEL_NAME="/netscratch/duynguyen/Research/LLaVA-Med/weights_full/checkpoint_llava_med_instruct_60k_inline_mention_version_1-5"
 #VISION_TOWER=goog§le/siglip-so400m-patch14-384
 VISION_TOWER=openai/clip-vit-large-patch14
 
