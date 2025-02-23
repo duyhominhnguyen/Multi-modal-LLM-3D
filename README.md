@@ -80,3 +80,18 @@ To adapt the evaluation process, you need to modify `open_flamingo/eval/evaluate
 
 For further details, please refer to the original [evaluation README](https://github.com/mlfoundations/open_flamingo/tree/main/open_flamingo/eval).
 
+=============================================================================
+## 1. Logra-Med-3D + DCI: Applying Logra-Med-3D + DCI for 3D Medical Visual Question Answering
+### Firstly, install all necessary packages as in LLaVA-Med: https://github.com/microsoft/LLaVA-Med
+
+### To run the model, put the folder vbm_images into dataset_3D first. Then:
+
+- If choosing to load weight logra-med 1.5 + DCI and train stage 1 and stage 2, run script finetune_3D_DCI.sh
+- If choosing to load weight logra-med 1.5 + DCI and directly train on instruction-tuning dataset (stage 2), run script finetune_3D_DCI_only_stage2.sh
+
+### To inference the model, firstly you format the question.json as .json file you use to train the model and change paths (data, weight) in inference.sh file. Then, run:
+```Shell
+bash inference_3D.sh
+```
+
+### Weight name: ./models/checkpoint_llava_med_instruct_60k_inline_mention_version_1-5_1e0_multi_graph_100_scale_dci_test_bugfix
