@@ -81,7 +81,7 @@ To adapt the evaluation process, you need to modify `open_flamingo/eval/evaluate
 For further details, please refer to the original [evaluation README](https://github.com/mlfoundations/open_flamingo/tree/main/open_flamingo/eval).
 
 =============================================================================
-## 1. Logra-Med-3D + DCI: Applying Logra-Med-3D + DCI for 3D Medical Visual Question Answering
+## 3. Logra-Med-3D + DCI: Applying Logra-Med-3D + DCI for 3D Medical Visual Question Answering
 ### Firstly, install all necessary packages as in LLaVA-Med: https://github.com/microsoft/LLaVA-Med
 
 ### To run the model, put the folder vbm_images into dataset_3D first. Then:
