@@ -80,3 +80,5 @@ To adapt the evaluation process, you need to modify `open_flamingo/eval/evaluate
 
 For further details, please refer to the original [evaluation README](https://github.com/mlfoundations/open_flamingo/tree/main/open_flamingo/eval).
 
+### Single inference
+For single inference, please have a look at file `open_flamingo/inference.py`. You might modify it upon your situation.
