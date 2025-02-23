@@ -5,7 +5,7 @@ from open_flamingo.train.distributed import init_distributed_device, world_info_
 
 # Constants
 MODEL_NAME = "open_flamingo"
-CHECKPOINT_PATH = "/home/anhnv16/maund/open-flamingo-3D/OpenFlamingo-3B-vitl-mpt1b/checkpoint_19.pt"
+CHECKPOINT_PATH = "/maund/open-flamingo-3D/OpenFlamingo-3B-vitl-mpt1b/checkpoint_19.pt"
 
 
 # Model generation parameters
