@@ -1,6 +1,8 @@
-
 # ============================================================================================ 
-# For more information of mmc4 dataset, please take a look at: https://github.com/allenai/mmc4
+# For more information about the mmc4 dataset, please refer to: https://github.com/allenai/mmc4
+# Please note: This data is for demonstration purposes only.
+# At the time of development, the official pipeline for downloading mmc4 data was not functioning.
+# As a result, we temporarily used dummy data for both the similarity_matrix and image base64 content.
 # ============================================================================================
 
 import json
@@ -43,8 +45,6 @@ def convert_adni_to_mmc4(input_json_path, output_folder):
                 text_list.append(conversation["value"])
                 
             # Check for <image> tag in the first element of conversations list
-            # Please note that this data is only for demostration. 
-            # As the time of development, downloading pipeline of mmc4 data was broken from the author's side.
             first_convo = conversations[0]["value"]
             if "<image>" in first_convo:
                 if first_convo.startswith("<image>"):
@@ -55,6 +55,7 @@ def convert_adni_to_mmc4(input_json_path, output_folder):
             item["text_list"] = text_list
             
         # Handle image's base64 content:
+        # You can update this to work for your own dataset
         with open('./sample_base64.txt', 'r') as f:
             sample_img_base64_data = f.read()
             
