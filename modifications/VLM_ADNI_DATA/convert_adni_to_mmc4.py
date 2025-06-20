@@ -94,7 +94,7 @@ def convert_adni_to_mmc4(input_json_path, output_folder):
 
 if __name__ == "__main__":
     print("GOOO")
-    input_json_path = "/home/azureuser/maund/open_flamingo/modifications/VLM_ADNI_DATA/AD_caption-flamingo_3D_version.json"
-    output_folder = "/home/azureuser/maund/open_flamingo/modifications/VLM_ADNI_DATA/dummy"
+    input_json_path = "./AD_caption-flamingo_3D_version.json"
+    output_folder = "./dummy"
     convert_adni_to_mmc4(input_json_path, output_folder)
     compress_directory_to_tar(output_folder)
