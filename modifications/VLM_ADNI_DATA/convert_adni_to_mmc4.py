@@ -1,3 +1,8 @@
+
+# ============================================================================================ 
+# For more information of mmc4 dataset, please take a look at: https://github.com/allenai/mmc4
+# ============================================================================================
+
 import json
 import os
 import tarfile
@@ -38,6 +43,8 @@ def convert_adni_to_mmc4(input_json_path, output_folder):
                 text_list.append(conversation["value"])
                 
             # Check for <image> tag in the first element of conversations list
+            # Please note that this data is only for demostration. 
+            # As the time of development, downloading pipeline of mmc4 data was broken from the author's side.
             first_convo = conversations[0]["value"]
             if "<image>" in first_convo:
                 if first_convo.startswith("<image>"):
@@ -67,12 +74,9 @@ def convert_adni_to_mmc4(input_json_path, output_folder):
         # Create similarity_matrix
         similarity_matrix = []
         for img in img_info:
-            for _ in range(len(text_list)):
-                inner_list = [0] * len(text_list)
-                inner_list[matched_text_index] = 1
+            inner_list = [0] * len(text_list)
+            inner_list[img["matched_text_index"]] = 1 # In reality, similarity value can receive any float value in interval [0, 1]
             similarity_matrix.append(inner_list)
-
-        # item["similarity_matrix"] = similarity_matrix
         
         output_item = {
             "id": item.get("id", None),
